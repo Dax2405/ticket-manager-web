@@ -3,7 +3,7 @@ const nextConfig = {
   images: {
     domains: ["assets.aceternity.com", "upload.wikimedia.org"],
   },
-  output: "export",
+  output: "standalone",
 };
 
 export default nextConfig;
