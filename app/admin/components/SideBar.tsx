@@ -4,7 +4,7 @@ import { Sidebar, SidebarBody, SidebarLink } from "@/components/ui/sidebar";
 import {
   IconArrowLeft,
   IconBrandTabler,
-  IconSettings,
+  IconDatabase,
   IconUserShield,
 } from "@tabler/icons-react";
 import Link from "next/link";
@@ -25,6 +25,13 @@ export function SideBar() {
       href: "/admin/form",
       icon: (
         <IconUserShield className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
+      ),
+    },
+    {
+      label: "Tabla de registros",
+      href: "/admin/data",
+      icon: (
+        <IconDatabase className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
       ),
     },
 
