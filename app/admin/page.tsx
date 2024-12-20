@@ -4,6 +4,7 @@ import ProtectedRoute from "@/components/ProtectedRoute";
 import LineEntradas from "./components/LineEntradas";
 import LineSalidas from "./components/LineSalidas";
 import PieChartInPlace from "./components/PieChartInPlace";
+import ReportDownloader from "./components/ReportDownloader";
 
 const AdminPage = () => {
   return (
@@ -14,6 +15,10 @@ const AdminPage = () => {
             <PieChartInPlace sizex={400} sizey={300} />
           </div>
           <div className="col-span-1 md:col-span-2 lg:col-span-2">
+            <div className="flex justify-end">
+              <ReportDownloader />
+            </div>
+
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="col-span-1">
                 <LineEntradas sizex={500} sizey={300} />
